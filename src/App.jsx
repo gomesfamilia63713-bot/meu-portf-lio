@@ -22,13 +22,14 @@ import {
 
 } from "react-icons/si";
  
+
 const projetos = [
   {
     id: "bs-tools",
     nome: "BS TOOLS / Equip Master",
     categoria: "Sistema de Gestão de Estoque e Ferramentas",
     descricao:
-      "Aplicação web para controle e organização de estoque e ferramentas, com autenticação de usuários e painel administrativo.",
+      "Sistema web para organizar o estoque e controlar ferramentas, com autenticação de usuários e painel administrativo. Projeto prático voltado à organização e ao acompanhamento de informações.",
     imagem: bsToolsImage,
     tecnologias: ["React", "TypeScript", "Supabase", "Tailwind"],
     icone: "🛠️",
@@ -36,14 +37,16 @@ const projetos = [
   {
     id: "control-max",
     nome: "Control Max",
-    categoria: "Sistema de Controle de Produção",
+    categoria: "Sistema de Controle de Produção e Obras",
     descricao:
-      "Aplicação para acompanhamento da produção e gestão de obras, com registros de efetivos, atividades e relatórios.",
+      "Sistema web para apoiar o acompanhamento de obras e da produção, com registros de efetivos, atividades por trabalhador e relatórios. Projeto prático voltado à organização das informações e à consulta dos registros.",
     imagem: controlMaxImage,
     tecnologias: ["React", "JavaScript", "SQL", "Tailwind"],
     icone: "📊",
   },
 ];
+
+
 
 const tecnologias = [
   { nome: "JavaScript", icone: SiJavascript, cor: "#F7DF1E" },
@@ -54,12 +57,15 @@ const tecnologias = [
   { nome: "Node.js", icone: SiNodedotjs, cor: "#339933" },
   { nome: "SQL", icone: FaDatabase, cor: "#4479A1" },
   { nome: "Supabase", icone: SiSupabase, cor: "#3ECF8E" },
-  { nome: "Git & GitHub", icone: SiGithub, cor: "#181717" },
-  { nome: "Vercel & Netlify", icone: SiVercel, cor: "#000000" },
+  { nome: "Git", icone: SiGithub, cor: "#F0F0F0" },
+  { nome: "GitHub", icone: SiGithub, cor: "#F0F0F0" },
+  { nome: "Vercel", icone: SiVercel, cor: "#F0F0F0" },
+  { nome: "Netlify", icone: SiVercel, cor: "#00C7B7" },
   { nome: "VS Code", icone: FaCode, cor: "#007ACC" },
- { nome: "Lovable", icone: FaHeart, cor: "#FF69B4" },
-  { nome: "IA / Ferramentas de IA", icone: FaBrain, cor: "#7C3AED" },
+  { nome: "Lovable", icone: FaHeart, cor: "#FF69B4" },
+  { nome: "Ferramentas de IA", icone: FaBrain, cor: "#7C3AED" },
 ];
+
 
 // Coloque aqui os nomes exatos dos arquivos de cada pasta.
 // Use caminhos relativos à pasta public, sem começar com "public/".
@@ -193,14 +199,17 @@ function App() {
             <h1>
               Weine da Silva <span>Gomes</span>
             </h1>
-            <h2 className="hero-subtitle">Desenvolvedor de Software Júnior</h2>
-            <p>
-              Sou apaixonado por tecnologia e estou sempre em busca de aprender
-              e evoluir. Tenho experiência prática no desenvolvimento de sistemas
-              e aplicações web, com foco em soluções simples, funcionais e
-              eficientes.
-            </p>
+           <h2 className="hero-subtitle">
+  Desenvolvedor de Software Júnior | Sistemas Web
+</h2>
 
+<p>
+  Desenvolvo projetos práticos com React, JavaScript e bancos de dados,
+  buscando criar soluções digitais para facilitar rotinas e organizar
+  informações. Tenho interesse especial em sistemas para construção civil,
+  gestão de obras e pequenos negócios. Estou aberto a oportunidades
+  profissionais e a conversar sobre novos projetos.
+</p>
             <div className="hero-contacts">
               <span>
                 <Icon>📍</Icon> Altamira - PA
@@ -213,17 +222,22 @@ function App() {
               </a>
             </div>
 
-            <div className="hero-actions">
-              <a className="button primary" href="#projetos">
-                ▦ &nbsp; Ver Projetos
-              </a>
-              <a
-                className="button secondary"
-                href="mailto:weinegomes0@gmail.com"
-              >
-                ↓ &nbsp; Entrar em contato
-              </a>
-            </div>
+           
+<div className="hero-actions">
+  <a className="button primary" href="#projetos">
+    ▦ &nbsp; Ver Projetos
+  </a>
+
+  <a
+    className="button secondary"
+    href="https://wa.me/5593992349010?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20sistema."
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Falar pelo WhatsApp
+  </a>
+</div>
+
           </div>
 
           <div className="hero-photo">
@@ -319,12 +333,18 @@ function App() {
             <div>
               <span className="section-kicker">SOBRE MIM</span>
               <h2 className="section-title">Minha jornada</h2>
-              <p>
-                Tenho facilidade para aprender novas tecnologias, sou proativo,
-                dedicado e gosto de resolver problemas. Estou em constante
-                evolução e busco minha primeira oportunidade profissional na
-                área de tecnologia.
-              </p>
+             
+<p>
+  Minha jornada na programação começou com o aprendizado autodidata
+  e a criação de projetos práticos. Tenho desenvolvido aplicações
+  web utilizando tecnologias como React, JavaScript, TypeScript e
+  Supabase, buscando transformar necessidades reais em soluções
+  digitais. Tenho interesse especial em sistemas de gestão,
+  construção civil e organização de processos. Sou dedicado,
+  gosto de aprender e estou em busca da minha primeira oportunidade
+  profissional na área de desenvolvimento de software.
+</p>
+
             </div>
 
             <div className="strength-list">
@@ -345,26 +365,83 @@ function App() {
           </div>
         </section>
 
-        <section className="contact section-dark" id="contato">
-          <div className="section-container contact-layout">
-            <div>
-              <span className="section-kicker">CONTATO</span>
-              <h2 className="section-title">Vamos conversar?</h2>
-              <p>
-                Estou aberto a oportunidades de início de carreira em tecnologia.
-              </p>
-            </div>
+       
+<section className="contact section-dark" id="contato">
+  <div className="section-container contact-layout">
+    <div className="contact-intro">
+      <span className="section-kicker">CONTATO</span>
 
-            <div className="contact-links">
-              <a href="tel:+5593992349010">☎ &nbsp; (93) 99234-9010</a>
-              <a href="mailto:weinegomes0@gmail.com">
-                ✉ &nbsp; weinegomes0@gmail.com
-              </a>
-              <span>📍 &nbsp; Altamira - PA, Brasil</span>
-            </div>
-          </div>
-        </section>
-      </main>
+      <h2 className="section-title">
+        Vamos tirar sua ideia do papel?
+      </h2>
+
+      <p>
+        Estou aberto a oportunidades profissionais e a novos projetos.
+        Se você precisa de um sistema web ou quer conversar sobre uma
+        ideia, entre em contato comigo.
+      </p>
+    </div>
+
+   
+<div className="contact-links">
+  <a
+    className="contact-button whatsapp-button"
+    href="https://wa.me/5593992349010?text=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20fazer%20um%20or%C3%A7amento%21"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <svg
+      className="contact-original-icon"
+      viewBox="0 0 32 32"
+      aria-hidden="true"
+    >
+      <path
+        fill="currentColor"
+        d="M16 3a12.8 12.8 0 0 0-10.9 19.5L3.4 29l6.7-1.7A12.9 12.9 0 1 0 16 3Zm0 23.4c-2 0-3.9-.5-5.6-1.6l-.4-.2-4 .9 1-3.9-.3-.4A10.4 10.4 0 1 1 16 26.4Zm5.7-7.8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.5 8.5 0 0 1-2.6-1.6 9.7 9.7 0 0 1-1.8-2.3c-.2-.3 0-.5.2-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a12.6 12.6 0 0 0 4.8 4.2c.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6s-.2-.2-.5-.3Z"
+      />
+    </svg>
+
+    <span>
+      <strong>Fazer um orçamento pelo WhatsApp</strong>
+      <small>Converse comigo diretamente</small>
+    </span>
+
+    <span className="contact-arrow">↗</span>
+  </a>
+
+  <a
+    className="contact-button email-button"
+   
+href="https://mail.google.com/mail/?view=cm&fs=1&to=weinegomes0%40gmail.com&su=Solicita%C3%A7%C3%A3o%20de%20or%C3%A7amento&body=Ol%C3%A1%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20fazer%20um%20or%C3%A7amento%21"
+
+  >
+    <svg
+      className="contact-original-icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        fill="currentColor"
+        d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"
+      />
+    </svg>
+
+    <span>
+      <strong>Solicitar orçamento por e-mail</strong>
+      <small>Envie os detalhes do seu projeto</small>
+    </span>
+
+    <span className="contact-arrow">↗</span>
+  </a>
+
+  <span className="contact-location">
+    📍 Altamira - PA, Brasil
+  </span>
+</div>
+
+  </div>
+</section>
+</main>
 
       <footer className="footer">
         <a className="logo" href="#inicio">
